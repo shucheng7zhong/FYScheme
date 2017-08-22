@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840679991F37FE5500D0C966 /* FYSchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840679981F37FE5500D0C966 /* FYSchemeManager.m */; };
+		8406799C1F380D4200D0C966 /* FYSchemeHostHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8406799B1F380D4200D0C966 /* FYSchemeHostHandler.m */; };
+		840679A31F384A9F00D0C966 /* SchemeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 840679A21F384A9F00D0C966 /* SchemeUtils.m */; };
+		840679A61F384D5600D0C966 /* FYSchemeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 840679A51F384D5600D0C966 /* FYSchemeConstants.m */; };
+		840679AC1F38556600D0C966 /* FYTestScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 840679AB1F38556600D0C966 /* FYTestScheme.m */; };
+		840679AF1F3855BD00D0C966 /* FYSchemePathHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 840679AE1F3855BD00D0C966 /* FYSchemePathHandler.m */; };
+		847CEA2C1F39883800035195 /* FYSchemePurschase.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CEA2B1F39883800035195 /* FYSchemePurschase.m */; };
+		847CEA2F1F39891400035195 /* FYSchemeSubscribe.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CEA2E1F39891400035195 /* FYSchemeSubscribe.m */; };
+		847CEA321F398A1B00035195 /* FYSchemeMyasset.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CEA311F398A1B00035195 /* FYSchemeMyasset.m */; };
+		847EC45A1F394C35005930B2 /* FYTradeScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 847EC4591F394C35005930B2 /* FYTradeScheme.m */; };
+		847EC45D1F3951BC005930B2 /* FYSchemeInvite.m in Sources */ = {isa = PBXBuildFile; fileRef = 847EC45C1F3951BC005930B2 /* FYSchemeInvite.m */; };
+		84EB94F21F29FA3100018481 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EB94F11F29FA3100018481 /* main.m */; };
+		84EB94F51F29FA3100018481 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EB94F41F29FA3100018481 /* AppDelegate.m */; };
+		84EB94FB1F29FA3100018481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB94F91F29FA3100018481 /* Main.storyboard */; };
+		84EB94FD1F29FA3100018481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB94FC1F29FA3100018481 /* Assets.xcassets */; };
+		84EB95001F29FA3100018481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB94FE1F29FA3100018481 /* LaunchScreen.storyboard */; };
+		84EB950B1F29FA3100018481 /* FYSchemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EB950A1F29FA3100018481 /* FYSchemeTests.m */; };
+		84EB95161F29FA3100018481 /* FYSchemeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EB95151F29FA3100018481 /* FYSchemeUITests.m */; };
+		84FB8DDE1F41989200D8F382 /* FYSchemeHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8DDD1F41989200D8F382 /* FYSchemeHelp.m */; };
+		84FB8DE31F419E9E00D8F382 /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8DE21F419E9E00D8F382 /* UIColor+hex.m */; };
+		84FB8DE81F41B8FF00D8F382 /* FYTradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8DE71F41B8FF00D8F382 /* FYTradeViewController.m */; };
+		84FB8DEB1F41B92100D8F382 /* FYAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8DEA1F41B92100D8F382 /* FYAssetViewController.m */; };
+		84FB8DEE1F41B93D00D8F382 /* FYExtraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8DED1F41B93D00D8F382 /* FYExtraViewController.m */; };
+		84FB8DF41F41BE8600D8F382 /* DepositViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8DF31F41BE8600D8F382 /* DepositViewController.m */; };
+		84FB8DF71F41BE9700D8F382 /* EncashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB8DF61F41BE9700D8F382 /* EncashViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84EB95071F29FA3100018481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84EB94E51F29FA3100018481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84EB94EC1F29FA3100018481;
+			remoteInfo = FYScheme;
+		};
+		84EB95121F29FA3100018481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84EB94E51F29FA3100018481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84EB94EC1F29FA3100018481;
+			remoteInfo = FYScheme;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840679971F37FE5500D0C966 /* FYSchemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeManager.h; sourceTree = "<group>"; };
+		840679981F37FE5500D0C966 /* FYSchemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeManager.m; sourceTree = "<group>"; };
+		8406799A1F380D4200D0C966 /* FYSchemeHostHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeHostHandler.h; sourceTree = "<group>"; };
+		8406799B1F380D4200D0C966 /* FYSchemeHostHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeHostHandler.m; sourceTree = "<group>"; };
+		840679A11F384A9F00D0C966 /* SchemeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchemeUtils.h; sourceTree = "<group>"; };
+		840679A21F384A9F00D0C966 /* SchemeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchemeUtils.m; sourceTree = "<group>"; };
+		840679A41F384D5600D0C966 /* FYSchemeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeConstants.h; sourceTree = "<group>"; };
+		840679A51F384D5600D0C966 /* FYSchemeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeConstants.m; sourceTree = "<group>"; };
+		840679AA1F38556600D0C966 /* FYTestScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTestScheme.h; sourceTree = "<group>"; };
+		840679AB1F38556600D0C966 /* FYTestScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTestScheme.m; sourceTree = "<group>"; };
+		840679AD1F3855BD00D0C966 /* FYSchemePathHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemePathHandler.h; sourceTree = "<group>"; };
+		840679AE1F3855BD00D0C966 /* FYSchemePathHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemePathHandler.m; sourceTree = "<group>"; };
+		847CEA2A1F39883800035195 /* FYSchemePurschase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemePurschase.h; sourceTree = "<group>"; };
+		847CEA2B1F39883800035195 /* FYSchemePurschase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemePurschase.m; sourceTree = "<group>"; };
+		847CEA2D1F39891400035195 /* FYSchemeSubscribe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeSubscribe.h; sourceTree = "<group>"; };
+		847CEA2E1F39891400035195 /* FYSchemeSubscribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeSubscribe.m; sourceTree = "<group>"; };
+		847CEA301F398A1B00035195 /* FYSchemeMyasset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeMyasset.h; sourceTree = "<group>"; };
+		847CEA311F398A1B00035195 /* FYSchemeMyasset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeMyasset.m; sourceTree = "<group>"; };
+		847EC4581F394C35005930B2 /* FYTradeScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTradeScheme.h; sourceTree = "<group>"; };
+		847EC4591F394C35005930B2 /* FYTradeScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTradeScheme.m; sourceTree = "<group>"; };
+		847EC45B1F3951BC005930B2 /* FYSchemeInvite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeInvite.h; sourceTree = "<group>"; };
+		847EC45C1F3951BC005930B2 /* FYSchemeInvite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeInvite.m; sourceTree = "<group>"; };
+		84EB94ED1F29FA3100018481 /* FYScheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYScheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EB94F11F29FA3100018481 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84EB94F31F29FA3100018481 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84EB94F41F29FA3100018481 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84EB94FA1F29FA3100018481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84EB94FC1F29FA3100018481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84EB94FF1F29FA3100018481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84EB95011F29FA3100018481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EB95061F29FA3100018481 /* FYSchemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYSchemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EB950A1F29FA3100018481 /* FYSchemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYSchemeTests.m; sourceTree = "<group>"; };
+		84EB950C1F29FA3100018481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EB95111F29FA3100018481 /* FYSchemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYSchemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EB95151F29FA3100018481 /* FYSchemeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYSchemeUITests.m; sourceTree = "<group>"; };
+		84EB95171F29FA3100018481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FB8DDC1F41989200D8F382 /* FYSchemeHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeHelp.h; sourceTree = "<group>"; };
+		84FB8DDD1F41989200D8F382 /* FYSchemeHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeHelp.m; sourceTree = "<group>"; };
+		84FB8DE11F419E9E00D8F382 /* UIColor+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hex.h"; sourceTree = "<group>"; };
+		84FB8DE21F419E9E00D8F382 /* UIColor+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex.m"; sourceTree = "<group>"; };
+		84FB8DE51F41B39800D8F382 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84FB8DE61F41B8FF00D8F382 /* FYTradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTradeViewController.h; sourceTree = "<group>"; };
+		84FB8DE71F41B8FF00D8F382 /* FYTradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTradeViewController.m; sourceTree = "<group>"; };
+		84FB8DE91F41B92100D8F382 /* FYAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAssetViewController.h; sourceTree = "<group>"; };
+		84FB8DEA1F41B92100D8F382 /* FYAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYAssetViewController.m; sourceTree = "<group>"; };
+		84FB8DEC1F41B93D00D8F382 /* FYExtraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYExtraViewController.h; sourceTree = "<group>"; };
+		84FB8DED1F41B93D00D8F382 /* FYExtraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYExtraViewController.m; sourceTree = "<group>"; };
+		84FB8DF21F41BE8500D8F382 /* DepositViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepositViewController.h; sourceTree = "<group>"; };
+		84FB8DF31F41BE8600D8F382 /* DepositViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepositViewController.m; sourceTree = "<group>"; };
+		84FB8DF51F41BE9700D8F382 /* EncashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncashViewController.h; sourceTree = "<group>"; };
+		84FB8DF61F41BE9700D8F382 /* EncashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncashViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84EB94EA1F29FA3100018481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EB95031F29FA3100018481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EB950E1F29FA3100018481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840679961F37FE1E00D0C966 /* Scheme */ = {
+			isa = PBXGroup;
+			children = (
+				840679A01F384A2200D0C966 /* application */,
+				840679971F37FE5500D0C966 /* FYSchemeManager.h */,
+				840679981F37FE5500D0C966 /* FYSchemeManager.m */,
+				8406799A1F380D4200D0C966 /* FYSchemeHostHandler.h */,
+				8406799B1F380D4200D0C966 /* FYSchemeHostHandler.m */,
+				840679AD1F3855BD00D0C966 /* FYSchemePathHandler.h */,
+				840679AE1F3855BD00D0C966 /* FYSchemePathHandler.m */,
+				840679A41F384D5600D0C966 /* FYSchemeConstants.h */,
+				840679A51F384D5600D0C966 /* FYSchemeConstants.m */,
+			);
+			path = Scheme;
+			sourceTree = "<group>";
+		};
+		840679A01F384A2200D0C966 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				840679A11F384A9F00D0C966 /* SchemeUtils.h */,
+				840679A21F384A9F00D0C966 /* SchemeUtils.m */,
+				840679AA1F38556600D0C966 /* FYTestScheme.h */,
+				840679AB1F38556600D0C966 /* FYTestScheme.m */,
+				847EC4581F394C35005930B2 /* FYTradeScheme.h */,
+				847EC4591F394C35005930B2 /* FYTradeScheme.m */,
+				847EC45B1F3951BC005930B2 /* FYSchemeInvite.h */,
+				847EC45C1F3951BC005930B2 /* FYSchemeInvite.m */,
+				84FB8DDC1F41989200D8F382 /* FYSchemeHelp.h */,
+				84FB8DDD1F41989200D8F382 /* FYSchemeHelp.m */,
+				847CEA2A1F39883800035195 /* FYSchemePurschase.h */,
+				847CEA2B1F39883800035195 /* FYSchemePurschase.m */,
+				847CEA2D1F39891400035195 /* FYSchemeSubscribe.h */,
+				847CEA2E1F39891400035195 /* FYSchemeSubscribe.m */,
+				847CEA301F398A1B00035195 /* FYSchemeMyasset.h */,
+				847CEA311F398A1B00035195 /* FYSchemeMyasset.m */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		844253531F2AD8CD00D56391 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8DEF1F41BE4100D8F382 /* Asset */,
+				84FB8DF01F41BE4200D8F382 /* Extra */,
+				84FB8DF11F41BE4200D8F382 /* Trade */,
+				84FB8DE61F41B8FF00D8F382 /* FYTradeViewController.h */,
+				84FB8DE71F41B8FF00D8F382 /* FYTradeViewController.m */,
+				84FB8DE91F41B92100D8F382 /* FYAssetViewController.h */,
+				84FB8DEA1F41B92100D8F382 /* FYAssetViewController.m */,
+				84FB8DEC1F41B93D00D8F382 /* FYExtraViewController.h */,
+				84FB8DED1F41B93D00D8F382 /* FYExtraViewController.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		84EB94E41F29FA3100018481 = {
+			isa = PBXGroup;
+			children = (
+				84EB94EF1F29FA3100018481 /* FYScheme */,
+				84EB95091F29FA3100018481 /* FYSchemeTests */,
+				84EB95141F29FA3100018481 /* FYSchemeUITests */,
+				84EB94EE1F29FA3100018481 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84EB94EE1F29FA3100018481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84EB94ED1F29FA3100018481 /* FYScheme.app */,
+				84EB95061F29FA3100018481 /* FYSchemeTests.xctest */,
+				84EB95111F29FA3100018481 /* FYSchemeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84EB94EF1F29FA3100018481 /* FYScheme */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8DDF1F419E2D00D8F382 /* Expand */,
+				840679961F37FE1E00D0C966 /* Scheme */,
+				844253531F2AD8CD00D56391 /* Module */,
+				84EB94F31F29FA3100018481 /* AppDelegate.h */,
+				84EB94F41F29FA3100018481 /* AppDelegate.m */,
+				84EB94F91F29FA3100018481 /* Main.storyboard */,
+				84EB94FC1F29FA3100018481 /* Assets.xcassets */,
+				84EB94FE1F29FA3100018481 /* LaunchScreen.storyboard */,
+				84EB95011F29FA3100018481 /* Info.plist */,
+				84EB94F01F29FA3100018481 /* Supporting Files */,
+			);
+			path = FYScheme;
+			sourceTree = "<group>";
+		};
+		84EB94F01F29FA3100018481 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84EB94F11F29FA3100018481 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84EB95091F29FA3100018481 /* FYSchemeTests */ = {
+			isa = PBXGroup;
+			children = (
+				84EB950A1F29FA3100018481 /* FYSchemeTests.m */,
+				84EB950C1F29FA3100018481 /* Info.plist */,
+			);
+			path = FYSchemeTests;
+			sourceTree = "<group>";
+		};
+		84EB95141F29FA3100018481 /* FYSchemeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84EB95151F29FA3100018481 /* FYSchemeUITests.m */,
+				84EB95171F29FA3100018481 /* Info.plist */,
+			);
+			path = FYSchemeUITests;
+			sourceTree = "<group>";
+		};
+		84FB8DDF1F419E2D00D8F382 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8DE01F419E6100D8F382 /* Category */,
+				84FB8DE51F41B39800D8F382 /* PrefixHeader.pch */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		84FB8DE01F419E6100D8F382 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8DE11F419E9E00D8F382 /* UIColor+hex.h */,
+				84FB8DE21F419E9E00D8F382 /* UIColor+hex.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		84FB8DEF1F41BE4100D8F382 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		84FB8DF01F41BE4200D8F382 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		84FB8DF11F41BE4200D8F382 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				84FB8DF21F41BE8500D8F382 /* DepositViewController.h */,
+				84FB8DF31F41BE8600D8F382 /* DepositViewController.m */,
+				84FB8DF51F41BE9700D8F382 /* EncashViewController.h */,
+				84FB8DF61F41BE9700D8F382 /* EncashViewController.m */,
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84EB94EC1F29FA3100018481 /* FYScheme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EB951A1F29FA3100018481 /* Build configuration list for PBXNativeTarget "FYScheme" */;
+			buildPhases = (
+				84EB94E91F29FA3100018481 /* Sources */,
+				84EB94EA1F29FA3100018481 /* Frameworks */,
+				84EB94EB1F29FA3100018481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FYScheme;
+			productName = FYScheme;
+			productReference = 84EB94ED1F29FA3100018481 /* FYScheme.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84EB95051F29FA3100018481 /* FYSchemeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EB951D1F29FA3100018481 /* Build configuration list for PBXNativeTarget "FYSchemeTests" */;
+			buildPhases = (
+				84EB95021F29FA3100018481 /* Sources */,
+				84EB95031F29FA3100018481 /* Frameworks */,
+				84EB95041F29FA3100018481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84EB95081F29FA3100018481 /* PBXTargetDependency */,
+			);
+			name = FYSchemeTests;
+			productName = FYSchemeTests;
+			productReference = 84EB95061F29FA3100018481 /* FYSchemeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84EB95101F29FA3100018481 /* FYSchemeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EB95201F29FA3100018481 /* Build configuration list for PBXNativeTarget "FYSchemeUITests" */;
+			buildPhases = (
+				84EB950D1F29FA3100018481 /* Sources */,
+				84EB950E1F29FA3100018481 /* Frameworks */,
+				84EB950F1F29FA3100018481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84EB95131F29FA3100018481 /* PBXTargetDependency */,
+			);
+			name = FYSchemeUITests;
+			productName = FYSchemeUITests;
+			productReference = 84EB95111F29FA3100018481 /* FYSchemeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84EB94E51F29FA3100018481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = fangYong;
+				TargetAttributes = {
+					84EB94EC1F29FA3100018481 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZBFGYZT9D6;
+						ProvisioningStyle = Automatic;
+					};
+					84EB95051F29FA3100018481 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZBFGYZT9D6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84EB94EC1F29FA3100018481;
+					};
+					84EB95101F29FA3100018481 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZBFGYZT9D6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84EB94EC1F29FA3100018481;
+					};
+				};
+			};
+			buildConfigurationList = 84EB94E81F29FA3100018481 /* Build configuration list for PBXProject "FYScheme" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84EB94E41F29FA3100018481;
+			productRefGroup = 84EB94EE1F29FA3100018481 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84EB94EC1F29FA3100018481 /* FYScheme */,
+				84EB95051F29FA3100018481 /* FYSchemeTests */,
+				84EB95101F29FA3100018481 /* FYSchemeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84EB94EB1F29FA3100018481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EB95001F29FA3100018481 /* LaunchScreen.storyboard in Resources */,
+				84EB94FD1F29FA3100018481 /* Assets.xcassets in Resources */,
+				84EB94FB1F29FA3100018481 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EB95041F29FA3100018481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EB950F1F29FA3100018481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84EB94E91F29FA3100018481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8406799C1F380D4200D0C966 /* FYSchemeHostHandler.m in Sources */,
+				847EC45A1F394C35005930B2 /* FYTradeScheme.m in Sources */,
+				84FB8DEB1F41B92100D8F382 /* FYAssetViewController.m in Sources */,
+				840679A61F384D5600D0C966 /* FYSchemeConstants.m in Sources */,
+				84EB94F51F29FA3100018481 /* AppDelegate.m in Sources */,
+				84FB8DDE1F41989200D8F382 /* FYSchemeHelp.m in Sources */,
+				847EC45D1F3951BC005930B2 /* FYSchemeInvite.m in Sources */,
+				840679991F37FE5500D0C966 /* FYSchemeManager.m in Sources */,
+				84FB8DEE1F41B93D00D8F382 /* FYExtraViewController.m in Sources */,
+				84EB94F21F29FA3100018481 /* main.m in Sources */,
+				847CEA321F398A1B00035195 /* FYSchemeMyasset.m in Sources */,
+				84FB8DE81F41B8FF00D8F382 /* FYTradeViewController.m in Sources */,
+				84FB8DF41F41BE8600D8F382 /* DepositViewController.m in Sources */,
+				840679A31F384A9F00D0C966 /* SchemeUtils.m in Sources */,
+				84FB8DF71F41BE9700D8F382 /* EncashViewController.m in Sources */,
+				840679AC1F38556600D0C966 /* FYTestScheme.m in Sources */,
+				847CEA2F1F39891400035195 /* FYSchemeSubscribe.m in Sources */,
+				847CEA2C1F39883800035195 /* FYSchemePurschase.m in Sources */,
+				84FB8DE31F419E9E00D8F382 /* UIColor+hex.m in Sources */,
+				840679AF1F3855BD00D0C966 /* FYSchemePathHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EB95021F29FA3100018481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EB950B1F29FA3100018481 /* FYSchemeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EB950D1F29FA3100018481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EB95161F29FA3100018481 /* FYSchemeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84EB95081F29FA3100018481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84EB94EC1F29FA3100018481 /* FYScheme */;
+			targetProxy = 84EB95071F29FA3100018481 /* PBXContainerItemProxy */;
+		};
+		84EB95131F29FA3100018481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84EB94EC1F29FA3100018481 /* FYScheme */;
+			targetProxy = 84EB95121F29FA3100018481 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84EB94F91F29FA3100018481 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84EB94FA1F29FA3100018481 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84EB94FE1F29FA3100018481 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84EB94FF1F29FA3100018481 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84EB95181F29FA3100018481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = FYScheme/Expand/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84EB95191F29FA3100018481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = FYScheme/Expand/PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84EB951B1F29FA3100018481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				INFOPLIST_FILE = FYScheme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYScheme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84EB951C1F29FA3100018481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				INFOPLIST_FILE = FYScheme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYScheme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84EB951E1F29FA3100018481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				INFOPLIST_FILE = FYSchemeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYSchemeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYScheme.app/FYScheme";
+			};
+			name = Debug;
+		};
+		84EB951F1F29FA3100018481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				INFOPLIST_FILE = FYSchemeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYSchemeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYScheme.app/FYScheme";
+			};
+			name = Release;
+		};
+		84EB95211F29FA3100018481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				INFOPLIST_FILE = FYSchemeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYSchemeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FYScheme;
+			};
+			name = Debug;
+		};
+		84EB95221F29FA3100018481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				INFOPLIST_FILE = FYSchemeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYSchemeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FYScheme;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84EB94E81F29FA3100018481 /* Build configuration list for PBXProject "FYScheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EB95181F29FA3100018481 /* Debug */,
+				84EB95191F29FA3100018481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EB951A1F29FA3100018481 /* Build configuration list for PBXNativeTarget "FYScheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EB951B1F29FA3100018481 /* Debug */,
+				84EB951C1F29FA3100018481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EB951D1F29FA3100018481 /* Build configuration list for PBXNativeTarget "FYSchemeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EB951E1F29FA3100018481 /* Debug */,
+				84EB951F1F29FA3100018481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EB95201F29FA3100018481 /* Build configuration list for PBXNativeTarget "FYSchemeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EB95211F29FA3100018481 /* Debug */,
+				84EB95221F29FA3100018481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84EB94E51F29FA3100018481 /* Project object */;
+}
