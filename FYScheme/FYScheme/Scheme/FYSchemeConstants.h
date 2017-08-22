@@ -39,7 +39,6 @@ extern NSString * const WebViewConfigureKeyUseUIWebView;
 
 
 //------------ trade -------------
-
 #define SCHEME_PATH_REDEEM @"/redeem"
 #define SCHEME_PATH_SUBSCRIBE @"/subscribe"
 #define SCHEME_PATH_HQTPURCHASE @"/deposit"

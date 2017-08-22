@@ -13,10 +13,13 @@
 		840679A61F384D5600D0C966 /* FYSchemeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 840679A51F384D5600D0C966 /* FYSchemeConstants.m */; };
 		840679AC1F38556600D0C966 /* FYTestScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 840679AB1F38556600D0C966 /* FYTestScheme.m */; };
 		840679AF1F3855BD00D0C966 /* FYSchemePathHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 840679AE1F3855BD00D0C966 /* FYSchemePathHandler.m */; };
+		841FB5151F4C452A00005707 /* FYSchemeEncash.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FB5141F4C452A00005707 /* FYSchemeEncash.m */; };
+		841FB51B1F4C45DD00005707 /* MyAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FB51A1F4C45DD00005707 /* MyAssetViewController.m */; };
+		841FB51E1F4C45FA00005707 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FB51D1F4C45FA00005707 /* HelpViewController.m */; };
+		841FB5211F4C497A00005707 /* FYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FB5201F4C497A00005707 /* FYBaseViewController.m */; };
+		841FB5241F4C4D6100005707 /* FYSchemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FB5231F4C4D6100005707 /* FYSchemeViewController.m */; };
 		847CEA2C1F39883800035195 /* FYSchemePurschase.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CEA2B1F39883800035195 /* FYSchemePurschase.m */; };
-		847CEA2F1F39891400035195 /* FYSchemeSubscribe.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CEA2E1F39891400035195 /* FYSchemeSubscribe.m */; };
 		847CEA321F398A1B00035195 /* FYSchemeMyasset.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CEA311F398A1B00035195 /* FYSchemeMyasset.m */; };
-		847EC45A1F394C35005930B2 /* FYTradeScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 847EC4591F394C35005930B2 /* FYTradeScheme.m */; };
 		847EC45D1F3951BC005930B2 /* FYSchemeInvite.m in Sources */ = {isa = PBXBuildFile; fileRef = 847EC45C1F3951BC005930B2 /* FYSchemeInvite.m */; };
 		84EB94F21F29FA3100018481 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EB94F11F29FA3100018481 /* main.m */; };
 		84EB94F51F29FA3100018481 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EB94F41F29FA3100018481 /* AppDelegate.m */; };
@@ -64,14 +67,20 @@
 		840679AB1F38556600D0C966 /* FYTestScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTestScheme.m; sourceTree = "<group>"; };
 		840679AD1F3855BD00D0C966 /* FYSchemePathHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemePathHandler.h; sourceTree = "<group>"; };
 		840679AE1F3855BD00D0C966 /* FYSchemePathHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemePathHandler.m; sourceTree = "<group>"; };
+		841FB5131F4C452A00005707 /* FYSchemeEncash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeEncash.h; sourceTree = "<group>"; };
+		841FB5141F4C452A00005707 /* FYSchemeEncash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeEncash.m; sourceTree = "<group>"; };
+		841FB5191F4C45DD00005707 /* MyAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAssetViewController.h; path = FYScheme/Scheme/application/MyAssetViewController.h; sourceTree = SOURCE_ROOT; };
+		841FB51A1F4C45DD00005707 /* MyAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAssetViewController.m; path = FYScheme/Scheme/application/MyAssetViewController.m; sourceTree = SOURCE_ROOT; };
+		841FB51C1F4C45FA00005707 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpViewController.h; path = FYScheme/Scheme/application/HelpViewController.h; sourceTree = SOURCE_ROOT; };
+		841FB51D1F4C45FA00005707 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelpViewController.m; path = FYScheme/Scheme/application/HelpViewController.m; sourceTree = SOURCE_ROOT; };
+		841FB51F1F4C497A00005707 /* FYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FYBaseViewController.h; path = Trade/FYBaseViewController.h; sourceTree = "<group>"; };
+		841FB5201F4C497A00005707 /* FYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FYBaseViewController.m; path = Trade/FYBaseViewController.m; sourceTree = "<group>"; };
+		841FB5221F4C4D6100005707 /* FYSchemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FYSchemeViewController.h; path = Trade/FYSchemeViewController.h; sourceTree = "<group>"; };
+		841FB5231F4C4D6100005707 /* FYSchemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FYSchemeViewController.m; path = Trade/FYSchemeViewController.m; sourceTree = "<group>"; };
 		847CEA2A1F39883800035195 /* FYSchemePurschase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemePurschase.h; sourceTree = "<group>"; };
 		847CEA2B1F39883800035195 /* FYSchemePurschase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemePurschase.m; sourceTree = "<group>"; };
-		847CEA2D1F39891400035195 /* FYSchemeSubscribe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeSubscribe.h; sourceTree = "<group>"; };
-		847CEA2E1F39891400035195 /* FYSchemeSubscribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeSubscribe.m; sourceTree = "<group>"; };
 		847CEA301F398A1B00035195 /* FYSchemeMyasset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeMyasset.h; sourceTree = "<group>"; };
 		847CEA311F398A1B00035195 /* FYSchemeMyasset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeMyasset.m; sourceTree = "<group>"; };
-		847EC4581F394C35005930B2 /* FYTradeScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTradeScheme.h; sourceTree = "<group>"; };
-		847EC4591F394C35005930B2 /* FYTradeScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTradeScheme.m; sourceTree = "<group>"; };
 		847EC45B1F3951BC005930B2 /* FYSchemeInvite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSchemeInvite.h; sourceTree = "<group>"; };
 		847EC45C1F3951BC005930B2 /* FYSchemeInvite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSchemeInvite.m; sourceTree = "<group>"; };
 		84EB94ED1F29FA3100018481 /* FYScheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYScheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +104,8 @@
 		84FB8DE51F41B39800D8F382 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		84FB8DE61F41B8FF00D8F382 /* FYTradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTradeViewController.h; sourceTree = "<group>"; };
 		84FB8DE71F41B8FF00D8F382 /* FYTradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTradeViewController.m; sourceTree = "<group>"; };
-		84FB8DE91F41B92100D8F382 /* FYAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAssetViewController.h; sourceTree = "<group>"; };
-		84FB8DEA1F41B92100D8F382 /* FYAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYAssetViewController.m; sourceTree = "<group>"; };
+		84FB8DE91F41B92100D8F382 /* FYAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FYAssetViewController.h; path = ../FYAssetViewController.h; sourceTree = "<group>"; };
+		84FB8DEA1F41B92100D8F382 /* FYAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FYAssetViewController.m; path = ../FYAssetViewController.m; sourceTree = "<group>"; };
 		84FB8DEC1F41B93D00D8F382 /* FYExtraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYExtraViewController.h; sourceTree = "<group>"; };
 		84FB8DED1F41B93D00D8F382 /* FYExtraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYExtraViewController.m; sourceTree = "<group>"; };
 		84FB8DF21F41BE8500D8F382 /* DepositViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepositViewController.h; sourceTree = "<group>"; };
@@ -153,16 +162,14 @@
 				840679A21F384A9F00D0C966 /* SchemeUtils.m */,
 				840679AA1F38556600D0C966 /* FYTestScheme.h */,
 				840679AB1F38556600D0C966 /* FYTestScheme.m */,
-				847EC4581F394C35005930B2 /* FYTradeScheme.h */,
-				847EC4591F394C35005930B2 /* FYTradeScheme.m */,
 				847EC45B1F3951BC005930B2 /* FYSchemeInvite.h */,
 				847EC45C1F3951BC005930B2 /* FYSchemeInvite.m */,
 				84FB8DDC1F41989200D8F382 /* FYSchemeHelp.h */,
 				84FB8DDD1F41989200D8F382 /* FYSchemeHelp.m */,
 				847CEA2A1F39883800035195 /* FYSchemePurschase.h */,
 				847CEA2B1F39883800035195 /* FYSchemePurschase.m */,
-				847CEA2D1F39891400035195 /* FYSchemeSubscribe.h */,
-				847CEA2E1F39891400035195 /* FYSchemeSubscribe.m */,
+				841FB5131F4C452A00005707 /* FYSchemeEncash.h */,
+				841FB5141F4C452A00005707 /* FYSchemeEncash.m */,
 				847CEA301F398A1B00035195 /* FYSchemeMyasset.h */,
 				847CEA311F398A1B00035195 /* FYSchemeMyasset.m */,
 			);
@@ -177,10 +184,12 @@
 				84FB8DF11F41BE4200D8F382 /* Trade */,
 				84FB8DE61F41B8FF00D8F382 /* FYTradeViewController.h */,
 				84FB8DE71F41B8FF00D8F382 /* FYTradeViewController.m */,
-				84FB8DE91F41B92100D8F382 /* FYAssetViewController.h */,
-				84FB8DEA1F41B92100D8F382 /* FYAssetViewController.m */,
 				84FB8DEC1F41B93D00D8F382 /* FYExtraViewController.h */,
 				84FB8DED1F41B93D00D8F382 /* FYExtraViewController.m */,
+				841FB51F1F4C497A00005707 /* FYBaseViewController.h */,
+				841FB5201F4C497A00005707 /* FYBaseViewController.m */,
+				841FB5221F4C4D6100005707 /* FYSchemeViewController.h */,
+				841FB5231F4C4D6100005707 /* FYSchemeViewController.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -269,6 +278,8 @@
 		84FB8DEF1F41BE4100D8F382 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
+				841FB5191F4C45DD00005707 /* MyAssetViewController.h */,
+				841FB51A1F4C45DD00005707 /* MyAssetViewController.m */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -276,6 +287,8 @@
 		84FB8DF01F41BE4200D8F382 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
+				841FB51C1F4C45FA00005707 /* HelpViewController.h */,
+				841FB51D1F4C45FA00005707 /* HelpViewController.m */,
 			);
 			path = Extra;
 			sourceTree = "<group>";
@@ -283,6 +296,8 @@
 		84FB8DF11F41BE4200D8F382 /* Trade */ = {
 			isa = PBXGroup;
 			children = (
+				84FB8DE91F41B92100D8F382 /* FYAssetViewController.h */,
+				84FB8DEA1F41B92100D8F382 /* FYAssetViewController.m */,
 				84FB8DF21F41BE8500D8F382 /* DepositViewController.h */,
 				84FB8DF31F41BE8600D8F382 /* DepositViewController.m */,
 				84FB8DF51F41BE9700D8F382 /* EncashViewController.h */,
@@ -428,24 +443,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				8406799C1F380D4200D0C966 /* FYSchemeHostHandler.m in Sources */,
-				847EC45A1F394C35005930B2 /* FYTradeScheme.m in Sources */,
 				84FB8DEB1F41B92100D8F382 /* FYAssetViewController.m in Sources */,
 				840679A61F384D5600D0C966 /* FYSchemeConstants.m in Sources */,
 				84EB94F51F29FA3100018481 /* AppDelegate.m in Sources */,
+				841FB51E1F4C45FA00005707 /* HelpViewController.m in Sources */,
 				84FB8DDE1F41989200D8F382 /* FYSchemeHelp.m in Sources */,
+				841FB5151F4C452A00005707 /* FYSchemeEncash.m in Sources */,
 				847EC45D1F3951BC005930B2 /* FYSchemeInvite.m in Sources */,
 				840679991F37FE5500D0C966 /* FYSchemeManager.m in Sources */,
 				84FB8DEE1F41B93D00D8F382 /* FYExtraViewController.m in Sources */,
 				84EB94F21F29FA3100018481 /* main.m in Sources */,
 				847CEA321F398A1B00035195 /* FYSchemeMyasset.m in Sources */,
+				841FB51B1F4C45DD00005707 /* MyAssetViewController.m in Sources */,
 				84FB8DE81F41B8FF00D8F382 /* FYTradeViewController.m in Sources */,
 				84FB8DF41F41BE8600D8F382 /* DepositViewController.m in Sources */,
 				840679A31F384A9F00D0C966 /* SchemeUtils.m in Sources */,
 				84FB8DF71F41BE9700D8F382 /* EncashViewController.m in Sources */,
 				840679AC1F38556600D0C966 /* FYTestScheme.m in Sources */,
-				847CEA2F1F39891400035195 /* FYSchemeSubscribe.m in Sources */,
+				841FB5241F4C4D6100005707 /* FYSchemeViewController.m in Sources */,
 				847CEA2C1F39883800035195 /* FYSchemePurschase.m in Sources */,
 				84FB8DE31F419E9E00D8F382 /* UIColor+hex.m in Sources */,
+				841FB5211F4C497A00005707 /* FYBaseViewController.m in Sources */,
 				840679AF1F3855BD00D0C966 /* FYSchemePathHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

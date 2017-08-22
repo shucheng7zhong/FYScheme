@@ -1,18 +1,18 @@
 //
-//  DepositViewController.m
+//  HelpViewController.m
 //  FYScheme
 //
-//  Created by fangYong on 17/8/14.
+//  Created by fangYong on 17/8/22.
 //  Copyright © 2017年 fangYong. All rights reserved.
 //
 
-#import "DepositViewController.h"
+#import "HelpViewController.h"
 
-@interface DepositViewController ()
+@interface HelpViewController ()
 
 @end
 
-@implementation DepositViewController
+@implementation HelpViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +22,7 @@
 
 - (NSString *)whereString {
     
-    return @"这里是存入";
+    return  @"这是在线帮助";
 }
 
 - (void)didReceiveMemoryWarning {

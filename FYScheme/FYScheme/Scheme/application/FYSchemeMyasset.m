@@ -7,11 +7,13 @@
 //
 
 #import "FYSchemeMyasset.h"
-
+#import "MyAssetViewController.h"
 @implementation FYSchemeMyasset
 
 - (BOOL)invokeWithParamters:(NSDictionary *)paramters navigationController:(UINavigationController *)navigationController {
     
+    MyAssetViewController *vc = [MyAssetViewController new];
+    [navigationController pushViewController:vc animated:YES];
     return YES;
 }
 

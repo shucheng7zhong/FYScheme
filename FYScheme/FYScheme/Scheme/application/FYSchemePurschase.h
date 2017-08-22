@@ -7,7 +7,7 @@
 //
 
 #import "FYSchemePathHandler.h"
-
 @interface FYSchemePurschase : FYSchemePathHandler
+
 
 @end

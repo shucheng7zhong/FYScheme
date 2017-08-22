@@ -1,24 +1,29 @@
 //
-//  FYSchemeHelpViewController.m
+//  MyAssetViewController.m
 //  FYScheme
 //
-//  Created by fangYong on 17/8/14.
+//  Created by fangYong on 17/8/22.
 //  Copyright © 2017年 fangYong. All rights reserved.
 //
 
-#import "FYSchemeHelpViewController.h"
+#import "MyAssetViewController.h"
 
-@interface FYSchemeHelpViewController ()
+@interface MyAssetViewController ()
 
 @end
 
-@implementation FYSchemeHelpViewController
+@implementation MyAssetViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
 
+- (NSString *)whereString {
+    
+    return @"这里是资产页";
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

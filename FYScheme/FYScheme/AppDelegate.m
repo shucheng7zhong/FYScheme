@@ -7,12 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "FYTradeViewController.h"
-#import "FYAssetViewController.h"
 #import "FYExtraViewController.h"
 #import "FYSchemeManager.h"
 #import "FYSchemeConstants.h"
 #import "SchemeUtils.h"
+#import "FYSchemeViewController.h"
+#import "FYTradeViewController.h"
 @interface AppDelegate ()<FYSchemeNavigationDelegate>
 {
     UITabBarController *_tabBarController;
@@ -39,16 +39,15 @@
     return YES;
 }
 
-
 - (void)createRootViewController {
     
     UITabBarItem *item;
-    FYTradeViewController *vc1 = [FYTradeViewController new];
-    item = [vc1.tabBarItem initWithTitle:@"Trade" image:[UIImage imageNamed:@"fund"] selectedImage:[UIImage imageNamed:@"Hfund"]];
+    FYSchemeViewController *vc1 = [FYSchemeViewController new];
+    item = [vc1.tabBarItem initWithTitle:@"Scheme" image:[UIImage imageNamed:@"fund"] selectedImage:[UIImage imageNamed:@"Hfund"]];
     UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:vc1];
     
-    FYAssetViewController *vc2 = [FYAssetViewController new];
-    item = [vc2.tabBarItem initWithTitle:@"Asset" image:[UIImage imageNamed:@"fund"] selectedImage:[UIImage imageNamed:@"Hassets"]];
+    FYTradeViewController *vc2 = [FYTradeViewController new];
+    item = [vc2.tabBarItem initWithTitle:@"Trade" image:[UIImage imageNamed:@"assets"] selectedImage:[UIImage imageNamed:@"Hassets"]];
     UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:vc2];
     
     FYExtraViewController *vc3 = [FYExtraViewController new];
@@ -61,7 +60,6 @@
     _tabBarController.tabBar.tintColor = [UIColor colorWithRed:197/255.0 green:55/255.0 blue:60/255.0 alpha:1];
     _tabBarController.tabBar.barTintColor = [UIColor whiteColor];
 
-    
 }
 
 -(UINavigationController *)currentNavigationController {

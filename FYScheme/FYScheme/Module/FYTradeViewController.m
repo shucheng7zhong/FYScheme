@@ -7,16 +7,9 @@
 //
 
 #import "FYTradeViewController.h"
-#import "FYSchemeManager.h"
-#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-
-@interface FYTradeViewController ()<UITextViewDelegate>
-
-@property (weak, nonatomic) UITextView *schemeTextView;
-
-@end
-
+#import "DepositViewController.h"
+#import "EncashViewController.h"
+#import "FYAssetViewController.h"
 @implementation FYTradeViewController
 
 - (void)viewDidLoad {
@@ -26,61 +19,45 @@
 
 - (void)createContentView {
     
-    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH, SCREEN_HEIGHT/3)];
-    headerView.backgroundColor = [UIColor colorWithHex:@"d8dfe6"];
-    [self.view addSubview:headerView];
-    
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    UITextView *schemeTextView = [[UITextView alloc]initWithFrame:CGRectMake(30, 100, 300, 60)];
-    schemeTextView.backgroundColor = [UIColor whiteColor];
-    schemeTextView.text = @"请输入scheme";
-    schemeTextView.layer.borderWidth = 0.5;
-    schemeTextView.font = [UIFont systemFontOfSize:14];
-    schemeTextView.layer.borderColor = [UIColor blackColor].CGColor;
-    schemeTextView.delegate = self;
-    [self.view addSubview:schemeTextView];
-    _schemeTextView = schemeTextView;
-    
-    UIButton *schemeButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 70, 30)];
-    schemeButton.center = CGPointMake(SCREEN_WIDTH/2, CGRectGetMaxY(schemeTextView.frame) + 30);
-    [schemeButton setTitle:@"GO！" forState:UIControlStateNormal];
-    schemeButton.layer.cornerRadius = 8.0;
-    schemeButton.backgroundColor = [UIColor colorWithHex:@"f03456"];
-    [schemeButton addTarget:self action:@selector(schemeClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:schemeButton];
-    
-    
-    UIButton *depositButton = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/2 - 35, CGRectGetMaxY(headerView.frame) + 30, 70, 30)];
-    [depositButton setTitle:@"存钱" forState:UIControlStateNormal];
+    UIButton *depositButton = [[UIButton alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 40, 150, 80, 40)];
+    [depositButton setTitle:@"存入" forState:UIControlStateNormal];
     depositButton.backgroundColor = [UIColor colorWithHex:@"f03456"];
-    depositButton.layer.cornerRadius = 8.0;
-    [self.view addSubview:depositButton];
+    depositButton.layer.cornerRadius = 8;
     [depositButton addTarget:self action:@selector(depositClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:depositButton];
     
-    UIButton *encashButton = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/2 - 35, CGRectGetMaxY(depositButton.frame) + 20, 70, 30)];
-    [encashButton setTitle:@"取钱" forState:UIControlStateNormal];
+    UIButton *encashButton = [[UIButton alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 40, 210, 80, 40)];
+    [encashButton setTitle:@"取现" forState:UIControlStateNormal];
     encashButton.backgroundColor = [UIColor colorWithHex:@"f03456"];
-    encashButton.layer.cornerRadius = 8.0;
-    [self.view addSubview:encashButton];
+    encashButton.layer.cornerRadius = 8;
     [encashButton addTarget:self action:@selector(encashClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:encashButton];
     
-    
-}
+    UIButton *assetButton = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMinX(encashButton.frame), CGRectGetMaxY(encashButton.frame) + 20, 80, 40)];
+    [assetButton setTitle:@"资产" forState:UIControlStateNormal];
+    assetButton.backgroundColor = [UIColor colorWithHex:@"f03456"];
+    assetButton.layer.cornerRadius = 8;
+    [assetButton addTarget:self action:@selector(assetClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:assetButton];
 
-
-- (void)schemeClick {
     
-    [[FYSchemeManager shareInstance]openUrl:_schemeTextView.text];
 }
 
 - (void)depositClick {
     
-    
+    DepositViewController *vc = [DepositViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)encashClick {
     
-    
+    EncashViewController *vc = [EncashViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)assetClick {
+    
+    FYAssetViewController *vc = [FYAssetViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

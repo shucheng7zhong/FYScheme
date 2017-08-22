@@ -13,8 +13,8 @@
 #import "FYSchemeConstants.h"
 #import "FYSchemeInvite.h"
 #import "FYSchemePurschase.h"
-#import "FYSchemeSubscribe.h"
 #import "FYSchemeMyasset.h"
+#import "FYSchemeEncash.h"
 @implementation SchemeUtils
 
 + (void)setup {
@@ -35,7 +35,7 @@
     
     FYSchemeHostHandler *handler = [FYSchemeHostHandler new];
     [handler registerPathHandler:[FYSchemePurschase new] forPath:SCHEME_PATH_HQTPURCHASE];
-    [handler registerPathHandler:[FYSchemeSubscribe new] forPath:SCHEME_PATH_SUBSCRIBE];
+    [handler registerPathHandler:[FYSchemeEncash new] forPath:SCHEME_PATH_HQTREDEEM];
     return handler;
 }
 

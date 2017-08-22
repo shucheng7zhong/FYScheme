@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface DepositViewController : UIViewController
+#import "FYBaseViewController.h"
+@interface DepositViewController : FYBaseViewController
 
 @end

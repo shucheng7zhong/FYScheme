@@ -7,11 +7,14 @@
 //
 
 #import "FYSchemePurschase.h"
+#import "DepositViewController.h"
 
 @implementation FYSchemePurschase
 
 - (BOOL)invokeWithParamters:(NSDictionary *)paramters navigationController:(UINavigationController *)navigationController {
     
+    DepositViewController *vc = [DepositViewController new];
+    [navigationController pushViewController:vc animated:YES];
     return YES;
 }
 @end
