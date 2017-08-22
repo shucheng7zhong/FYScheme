@@ -31,6 +31,7 @@
 #define KEY_BROWSE_URL @"url"
 #define KEY_BROWSE_TITLE @"title"
 #define KEY_BROWSE_FUNC @"func"
+
 extern NSString * const WebViewConfigureKeyPostToken;
 extern NSString * const WebViewConfigureKeyConfig;
 extern NSString * const WebViewConfigureKeyNoClose;

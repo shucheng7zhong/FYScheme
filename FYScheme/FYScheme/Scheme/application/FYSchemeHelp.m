@@ -7,14 +7,10 @@
 //
 
 #import "FYSchemeHelp.h"
-#import "FYSchemeHelpViewController.h"
 
 @implementation FYSchemeHelp
 
 - (BOOL)invokeWithParamters:(NSDictionary *)paramters navigationController:(UINavigationController *)navigationController {
-    
-    FYSchemeHelpViewController *vc = [FYSchemeHelpViewController new];
-    [navigationController pushViewController:vc animated:YES];
     return YES;
 }
 
