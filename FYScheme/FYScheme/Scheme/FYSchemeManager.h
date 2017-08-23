@@ -10,21 +10,21 @@
 #import <UIKit/UIKit.h>
 
 @protocol FYSchemeNavigationDelegate <NSObject>
-- (UINavigationController *)currentNavigationController;
+- (nullable UINavigationController *)currentNavigationController;
 @end
 
 @class FYSchemeHostHandler;
 @interface FYSchemeManager : NSObject
 
-@property (weak, nonatomic) id<FYSchemeNavigationDelegate> navigationDelegate;
+@property (nullable,weak, nonatomic) id<FYSchemeNavigationDelegate> navigationDelegate;
 
-+ (instancetype)shareInstance;
++ (nullable instancetype)shareInstance;
 /**
  判断当前传入的url是否合法，是否有必要继续Scheme操作
 
  @param urlString 自定义格式的url
  */
-- (BOOL)canOpenUrl:(NSString*)urlString;
+- (BOOL)canOpenUrl:(nonnull NSString*)urlString;
 
 
 /**
@@ -32,7 +32,7 @@
 
  @param urlString 自定义格式的url
  */
-- (void)openUrl:(NSString*)urlString;
+- (void)openUrl:(nonnull NSString*)urlString;
 
 
 /**
@@ -41,9 +41,9 @@
  @param handler FYSchemeHostHandler
  @param host    自定义的host
  */
-- (void)registerHandler:(FYSchemeHostHandler*)handler forHost:(NSString *)host;
+- (void)registerHandler:(nullable FYSchemeHostHandler*)handler forHost:(nonnull NSString *)host;
 
-- (void)setNavigationController:(UINavigationController *)navigationController;
+- (void)setNavigationController:(nullable UINavigationController *)navigationController;
 
 - (void)setScheme:(nonnull NSString*)scheme;
 
