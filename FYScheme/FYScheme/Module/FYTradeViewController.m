@@ -9,7 +9,6 @@
 #import "FYTradeViewController.h"
 #import "DepositViewController.h"
 #import "EncashViewController.h"
-#import "FYAssetViewController.h"
 @implementation FYTradeViewController
 
 - (void)viewDidLoad {
@@ -33,14 +32,6 @@
     [encashButton addTarget:self action:@selector(encashClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:encashButton];
     
-    UIButton *assetButton = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMinX(encashButton.frame), CGRectGetMaxY(encashButton.frame) + 20, 80, 40)];
-    [assetButton setTitle:@"资产" forState:UIControlStateNormal];
-    assetButton.backgroundColor = [UIColor colorWithHex:@"f03456"];
-    assetButton.layer.cornerRadius = 8;
-    [assetButton addTarget:self action:@selector(assetClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:assetButton];
-
-    
 }
 
 - (void)depositClick {
@@ -52,12 +43,6 @@
 - (void)encashClick {
     
     EncashViewController *vc = [EncashViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)assetClick {
-    
-    FYAssetViewController *vc = [FYAssetViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

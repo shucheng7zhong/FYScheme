@@ -10,7 +10,7 @@
 #import "FYSchemeConstants.h"
 #import <UIKit/UIKit.h>
 
-@protocol HXSchemeDataSource <NSObject>
+@protocol FYSchemeDataSource <NSObject>
 
 @required
 - (BOOL)validateParamters:(nullable NSDictionary *)paramters;
@@ -18,7 +18,7 @@
 @end
 
 
-@interface FYSchemePathHandler : NSObject
+@interface FYSchemePathHandler : NSObject<FYSchemeDataSource>
 
 - (BOOL)validatePathInUrl:(nonnull NSURL *)url;
 
@@ -27,9 +27,6 @@
 - (nullable NSDictionary<NSString *, NSString *> *)defaultParamters;
 
 + (nullable NSDictionary *)paramtersOfUrlQueryFromUrl:(nonnull NSURL *)url;
-
-- (BOOL)invokeWithParamters:(nullable NSDictionary *)paramters navigationController:(nullable UINavigationController *)navigationController;
-
 
 
 @end

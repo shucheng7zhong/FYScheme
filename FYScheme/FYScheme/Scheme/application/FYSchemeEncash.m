@@ -13,6 +13,8 @@
 - (BOOL)invokeWithParamters:(NSDictionary *)paramters navigationController:(UINavigationController *)navigationController {
     
     EncashViewController *vc = [EncashViewController new];
+    vc.fundCode = [paramters objectForKey:@"fundCode"];
+    vc.fundName = [paramters objectForKey:@"fundName"];
     [navigationController pushViewController:vc animated:YES];
     return YES;
 }

@@ -14,16 +14,12 @@
 //------------支持的 hosts ----------
 #define SCHEME_HOST_EXTRA @"extra"
 #define SCHEME_HOST_TRADE @"trade"
-#define SCHEME_HOST_ASSET @"asset"
 
-//------------ asset -------------
-#define SCHEME_PATH_ASSETHOME @"/home"
-#define SCHEME_PATH_FUNDHOLDINGS @"/fundHoldings"
 
 //------------ extra -------------
-#define SCHEME_PATH_BANKCARDMANAGER @"/bankCardManager"
 #define SCHEME_PATH_INVITE @"/invite"
 #define SCHEME_PATH_HELP @"/help"
+
 //browse
 #define SCHEME_PATH_BROWSE @"/browse"
 #define SCHEME_PATH_BROWSEL @"/browseL"
@@ -32,19 +28,10 @@
 #define KEY_BROWSE_TITLE @"title"
 #define KEY_BROWSE_FUNC @"func"
 
-extern NSString * const WebViewConfigureKeyPostToken;
-extern NSString * const WebViewConfigureKeyConfig;
-extern NSString * const WebViewConfigureKeyNoClose;
-extern NSString * const WebViewConfigureKeyUseUIWebView;
-
 
 //------------ trade -------------
-#define SCHEME_PATH_REDEEM @"/redeem"
-#define SCHEME_PATH_SUBSCRIBE @"/subscribe"
 #define SCHEME_PATH_HQTPURCHASE @"/deposit"
 #define SCHEME_PATH_HQTREDEEM @"/encash"
-#define SCHEME_PATH_DEBTPAYMENT @"/debtPayment"
-
 
 @interface FYSchemeConstants : NSObject
 

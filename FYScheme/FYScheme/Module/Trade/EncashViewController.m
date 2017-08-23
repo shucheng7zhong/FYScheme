@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"取现";
+    
     // Do any additional setup after loading the view.
 }
 
@@ -24,19 +26,23 @@
     
     return @"这里是取现";
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)createContentView {
+    
+    UILabel *fundNameLabel = [[UILabel alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 80, 200, 160, 40)];
+    fundNameLabel.backgroundColor = [UIColor colorWithHex:@"f03456"];
+    if (self.fundName) {
+        fundNameLabel.text = [NSString stringWithFormat:@"基金名称:%@",self.fundName];
+    }
+    [self.view addSubview:fundNameLabel];
+    
+    UILabel *fundCodeLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMinX(fundNameLabel.frame), CGRectGetMaxY(fundNameLabel.frame) + 20, 160, 40)];
+    fundCodeLabel.backgroundColor = [UIColor colorWithHex:@"f03456"];
+    if (self.fundCode) {
+        fundCodeLabel.text = [NSString stringWithFormat:@"基金代码:%@",self.fundCode];
+    }
+    [self.view addSubview:fundCodeLabel];
 }
-*/
 
 @end

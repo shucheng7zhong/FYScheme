@@ -7,11 +7,13 @@
 //
 
 #import "FYSchemeInvite.h"
-
+#import "InvitationViewController.h"
 @implementation FYSchemeInvite
 
 - (BOOL)invokeWithParamters:(NSDictionary *)paramters navigationController:(UINavigationController *)navigationController {
     
+    InvitationViewController *vc = [InvitationViewController new];
+    [navigationController pushViewController:vc animated:YES];
     return YES;
 }
 @end

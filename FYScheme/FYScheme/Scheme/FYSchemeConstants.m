@@ -8,7 +8,6 @@
 
 #import "FYSchemeConstants.h"
 
-
 @implementation FYSchemeConstants
 
 @end

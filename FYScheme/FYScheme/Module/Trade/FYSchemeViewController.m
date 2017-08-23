@@ -32,7 +32,7 @@
     
     if (!_schemeDataArray) {
         
-        _schemeDataArray = [NSArray arrayWithObjects:@"trade/deposit",@"trade/encash",@"asset/home",@"asset/fundHoldings",@"extra/invite",@"extra/help", nil];
+        _schemeDataArray = [NSArray arrayWithObjects:@"trade/deposit?fundName=神马基金&fundCode=123456",@"trade/encash?fundName=神马基金&fundCode=123456",@"extra/invite",@"extra/help", nil];
     }
     return _schemeDataArray;
 }
@@ -41,7 +41,7 @@
     
     if (!_schemeTitleArray) {
         
-        _schemeTitleArray = [NSArray arrayWithObjects:@"存钱",@"取钱",@"主页",@"产品展示",@"邀请好友",@"在线帮助", nil];
+        _schemeTitleArray = [NSArray arrayWithObjects:@"存钱",@"取钱",@"邀请好友",@"在线帮助", nil];
     }
     return _schemeTitleArray;
 }
@@ -93,6 +93,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     cell.textLabel.text = [NSString stringWithFormat:@"%@ fyscheme://%@",self.schemeTitleArray[indexPath.row],self.schemeDataArray[indexPath.row]];
+    cell.textLabel.font = [UIFont systemFontOfSize:10];
     return cell;
 }
 

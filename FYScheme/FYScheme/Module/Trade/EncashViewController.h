@@ -10,4 +10,7 @@
 #import "FYBaseViewController.h"
 @interface EncashViewController : FYBaseViewController
 
+@property (copy, nonatomic) NSString *fundName;
+@property (copy, nonatomic) NSString *fundCode;
+
 @end

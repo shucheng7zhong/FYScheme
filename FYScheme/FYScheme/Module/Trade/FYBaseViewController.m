@@ -7,8 +7,12 @@
 //
 
 #import "FYBaseViewController.h"
+#import "AppDelegate.h"
 
 @interface FYBaseViewController ()
+
+@property (nonatomic, copy) UIColor *navigationTitleColor;
+@property (nonatomic, copy) UIColor *previousNavigationTitleColor;
 
 @end
 
@@ -17,6 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createContentView];
+    
+    
+ }
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
 }
 
 - (void)createContentView {

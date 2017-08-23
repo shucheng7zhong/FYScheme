@@ -13,20 +13,23 @@
 #import "FYSchemeConstants.h"
 #import "FYSchemeInvite.h"
 #import "FYSchemePurschase.h"
-#import "FYSchemeMyasset.h"
 #import "FYSchemeEncash.h"
+#import "FYSchemeHelp.h"
 @implementation SchemeUtils
-
 + (void)setup {
     
     [[FYSchemeManager shareInstance] registerHandler:[SchemeUtils extraHandler] forHost:SCHEME_HOST_EXTRA];
     [[FYSchemeManager shareInstance] registerHandler:[SchemeUtils tradeHandler] forHost:SCHEME_HOST_TRADE];
-    [[FYSchemeManager shareInstance] registerHandler:[SchemeUtils assetHandler] forHost:SCHEME_HOST_ASSET];
 }
 
+
+/**
+ 注册APP各个Host模块的子模块，对应自定义URL的Path
+ */
 + (FYSchemeHostHandler *)extraHandler {
     
     FYSchemeHostHandler *handler = [FYSchemeHostHandler new];
+    [handler registerPathHandler:[[FYSchemeHelp alloc]init] forPath:SCHEME_PATH_HELP];
     [handler registerPathHandler:[[FYSchemeInvite alloc]init] forPath:SCHEME_PATH_INVITE];
     return handler;
 }
@@ -39,10 +42,4 @@
     return handler;
 }
 
-+ (FYSchemeHostHandler *)assetHandler {
-    
-    FYSchemeHostHandler *handler = [FYSchemeHostHandler new];
-    [handler registerPathHandler:[FYSchemeMyasset new] forPath:SCHEME_PATH_ASSETHOME];
-    return handler;
-}
 @end

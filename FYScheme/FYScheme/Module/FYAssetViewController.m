@@ -8,8 +8,6 @@
 
 #import "FYAssetViewController.h"
 @interface FYAssetViewController ()
-
-@property (strong, nonatomic) NSArray *dataArray;
 @end
 
 

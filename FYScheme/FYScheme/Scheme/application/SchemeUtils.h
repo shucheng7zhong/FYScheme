@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface SchemeUtils : NSObject
-
+/**
+ 注册APP各个模块对应的自定义的HOST
+ */
 + (void)setup;
 
 @end
